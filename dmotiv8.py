@@ -20,7 +20,6 @@ def t_search(search_criteria):
 parser = argparse.ArgumentParser(usage="Enter a given Twitter search criteria and return a single response.",
                                  description="A simple utility to return a single tweet")
 parser.add_argument('search_criteria',
-                    type=str,
                     help="Enter any search criteria")
 args = parser.parse_args()
 
