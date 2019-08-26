@@ -24,7 +24,7 @@ def t_get_latest_tweet(screen_name):
     Return a single post
     """
     search = api.GetUserTimeline(screen_name=screen_name, count=1)
-    t_post = [post.created_at + ":\n" + post.text for post in search][0]
+    t_post = [post.created_at.split('+')[0] + "\n" + post.text for post in search][0]
 
     if 'http' in t_post:
         output = t_post.split('http')[0]
@@ -50,6 +50,7 @@ if __name__ == "__main__":
                       access_token_key=auth.access_token_key,
                       access_token_secret=auth.access_token_secret)
 
+    args.screen_name = "@boredelonmusk"
     if args.screen_name and not args.search_criteria:
         print(t_get_latest_tweet(args.screen_name))
     elif args.search_criteria and not args.screen_name:
