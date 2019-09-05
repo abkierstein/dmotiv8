@@ -31,5 +31,9 @@ positional arguments:
   search_criteria  Enter any search criteria
 
 optional arguments:
-  -h, --help       show this help message and exit
+  -h, --help            show this help message and exit
+  --search_criteria SEARCH_CRITERIA
+                        Enter any search criteria
+  --screen_name SCREEN_NAME
+                        Enter any twitter screen name
 ```
