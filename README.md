@@ -27,9 +27,6 @@ usage: Enter a given Twitter search criteria and return a single response.
 
 A simple utility to return a single tweet
 
-positional arguments:
-  search_criteria  Enter any search criteria
-
 optional arguments:
   -h, --help            show this help message and exit
   --search_criteria SEARCH_CRITERIA
