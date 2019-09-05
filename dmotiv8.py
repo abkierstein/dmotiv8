@@ -50,8 +50,10 @@ if __name__ == "__main__":
                       access_token_key=auth.access_token_key,
                       access_token_secret=auth.access_token_secret)
 
-    args.screen_name = "@boredelonmusk"
     if args.screen_name and not args.search_criteria:
         print(t_get_latest_tweet(args.screen_name))
     elif args.search_criteria and not args.screen_name:
         print(t_search(args.search_criteria))
+    else:
+        print("You must specify a screen name or search search criteria.")
+        print(parser.print_help())
