@@ -1,17 +1,12 @@
 # dmotiv8
+This tool will query Twitter with your search criteria and return a single response.
 
-### Requirements
-- Check requirements.txt for dependencies or...
+It was useful to return a recent tweet about a subject or from a person.
 
-    `pip install -r requirements.txt`
 
-- Make sure to update auth_lib.py with the following information:
-    ```        
-    self.consumer_key='<your consumer_key here>'
-    self.consumer_secret='<your consumer_secret here>'
-    self.access_token_key='<your access_token_key here>'
-    self.access_token_secret='<your access_token_secret here>'
-    ```
+### THIS PROJECT IS DEPRECATED
+Given the state of things at Twitter, I will likely not contribute to this project again.
+
 
 ### Usage
 ```
@@ -34,3 +29,16 @@ optional arguments:
   --screen_name SCREEN_NAME
                         Enter any twitter screen name
 ```
+
+### Requirements
+- Check requirements.txt for dependencies or...
+
+    `pip install -r requirements.txt`
+
+- Make sure to update auth_lib.py with the following information:
+    ```        
+    self.consumer_key='<your consumer_key here>'
+    self.consumer_secret='<your consumer_secret here>'
+    self.access_token_key='<your access_token_key here>'
+    self.access_token_secret='<your access_token_secret here>'
+    ```
